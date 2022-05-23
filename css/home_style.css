@@ -1,0 +1,167 @@
+header {
+    grid-area: header;
+    text-align: center;
+    background-color: red;
+    color: white;
+  }
+  
+  nav {
+    margin-top: 0px;
+    grid-area: nav;
+    background-color: #ffe9e0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  
+  nav li {
+    display: inline;
+  }
+  
+  nav #top_hr {
+    margin-top: 0px;
+  }
+  
+  nav #bottom_hr {
+    margin-top: 2px;
+  }
+  
+  #left_aside {
+    grid-area: left_aside;
+    background-size: contain;
+    margin-right: 15px;
+  }
+  
+  #left_aside .project_card {
+    margin-bottom: 25px;
+  }
+  
+  .project_card {
+    margin-top: 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px #dbdbdb;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+  }
+  
+  .project_card p {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .project_card h2 {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .project_card img {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 4px 4px 0px 0px;
+  }
+  
+  #right_aside {
+    grid-area: right_aside;
+    background-size: contain;
+    margin-left: 15px;
+  }
+  
+  main {
+    grid-area: main;
+    margin-left: 15px;
+  }
+  
+  main img {
+    width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    text-align: left;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    display: inline;
+  }
+  
+  footer img {
+    height: 24px;
+    display: inline;
+    float: right;
+  }
+  
+  header img {
+    height: 24px;
+    /* display: block; */
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "top_banner top_banner top_banner top_banner top_banner"
+      "main main main main left_aside"
+      "right_aside right_aside right_aside right_aside left_aside"
+      "footer footer footer footer footer";
+    margin: auto;
+    gap: 15px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .top_banner {
+    grid-area: top_banner;
+    gap: 0px;
+    display: grid;
+    grid-template-areas:
+      "header header header header header"
+      "nav nav nav nav nav";
+  }
+  
+  nav a:link,
+  nav a:visited {
+    background-color: #ffe9e0;
+    color: black;
+    padding: 16px 20px;
+    text-decoration: none;
+  }
+  
+  nav a:active,
+  nav a:hover,
+  nav a:focus {
+    background-color: red;
+    color: white;
+  }
+  
+  h1 {
+    font-family: "Andale Mono", monospace;
+    font-weight: 25;
+    font-size: 3.5em;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-weight: 100;
+  }
+  
