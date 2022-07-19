@@ -92,6 +92,7 @@ hr {
   text-align: left;
   display: block;
   grid-area: card_txt;
+  line-height: 25px;
 }
 
 .card_comp {
@@ -229,9 +230,8 @@ h2 {
   .link_button a:active,
   .link_button a:hover,
   .link_button a:focus {
-    background-color: #ffe9e0;
+    background-color: #ffcfbc;
     color: black;
-    padding: 16px 19px;
-    border: 1px #a9a9a9 solid;
-    border-radius: 5px;
+    padding: 16px 20px;
+    border-radius: 5px; 
   }
