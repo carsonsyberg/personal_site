@@ -105,6 +105,48 @@ hr {
     "card_cmp_txt card_cmp_btns";
 }
 
+@media (max-width: 800px) {
+
+  .project_card {
+    margin-top: 25px;
+    margin-right: 30px;
+    background-color: #ededed;
+    box-shadow: 1px 1px 5px #dbdbdb;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    display: grid;
+    grid-template-areas:
+      "card_img"
+      "card_txt"
+      "card_cmp";
+  }
+
+  .project_card img {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    grid-area: card_img;
+    width: 15em;
+    height: auto;
+    border-radius: 4px 0px 0px 4px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  .card_comp {
+    border-left: 0px;
+    border-top: 1px #bdbdbd solid;
+    background-color: #ffffff;
+    text-align: left;
+    display: grid;
+    grid-area: card_cmp;
+    grid-template-areas:
+      "card_cmp_txt card_cmp_btns";
+  }
+
+}
+
 .card_comp_text {
   display: block;
   grid-area: card_cmp_txt;
